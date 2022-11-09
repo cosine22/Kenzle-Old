@@ -1,0 +1,223 @@
+h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  font-size: 56px;
+}
+
+body {
+  width: 100%;
+  background-image: url("./albumCovers/background.jpg");
+  color: white;
+}
+
+#main-container {
+  text-align: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+#intro-card-inner {
+  background-color: rgb(44, 44, 44);
+  max-width: 90%;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.smallbums {
+  width: 5vw;
+  max-width: 60px;
+  box-shadow: 0 0 50px rgb(255 248 220 / 25%);
+  transition: all 90ms ease-in-out;
+}
+
+form {
+  text-align: center;
+}
+
+#result-table {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+  display: inline-block;
+}
+
+tr {
+  /* vertical-align: inherit; */
+  border-style: solid;
+}
+table {
+  border-collapse: separate;
+  color: white;
+  /* vertical-align: inherit; */
+  /* text-indent: initial; */
+  border-spacing: 2px;
+}
+
+td {
+  color: white;
+
+  /* display: table-cell; */
+}
+
+.song-cell {
+  opacity: 100;
+  min-width: 15vw;
+  /* padding-inline: 10px; */
+}
+
+.album-cell {
+  display: flex;
+  justify-content: flex-start;
+  min-width: 15vw;
+  align-items: inherit;
+  flex-direction: row;
+}
+
+#result {
+  /* border: 1px dotted #ccc; */
+  padding: 3px;
+  opacity: 1;
+  text-align: center;
+  max-width: fit-content;
+  margin: auto;
+}
+
+.album-cvr {
+  height: 70px;
+  width: 70px;
+}
+
+#result ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#result ul li {
+  padding: 5px 0;
+}
+#result ul li:hover {
+  background: #eee;
+  color: black;
+}
+
+.guessName {
+  background-color: none;
+}
+
+.guessImg {
+  background-color: none;
+}
+
+h3 {
+  margin-top: none;
+  position: fixed;
+  padding: 1%;
+  border: 2px;
+}
+
+lives h3 {
+  border: solid 1px white;
+}
+
+.track-number {
+  background-color: none;
+}
+
+#card-background {
+  opacity: 1;
+  top: 0%;
+  left: 0%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.4s ease-out;
+  overflow-y: scroll;
+  /* pointer-events: none; */
+}
+
+#end-card {
+  background-color: rgb(44, 44, 44);
+  color: white;
+  width: min(500px, 60vw);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 90px var(--seccol);
+  /* pointer-events: none; */
+}
+
+#end-card-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  padding-block: 30px;
+  /* pointer-events: none; */
+}
+
+#end-card-title-container {
+  width: 35vw;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+#mystery-song-title {
+  font-size: min(5vw, 30px);
+  margin-top: 10px;
+}
+
+#mystery-song-img {
+  width: 40vw;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+
+button {
+  background-color: rgb(255, 252, 238);
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  text-align: center;
+  max-width: 90%;
+  z-index: 100;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  margin: 4px 4px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+playAgain {
+  display: block;
+}
+
+playAgain button {
+  max-width: 10%;
+  background-color: green;
+  text-align: center;
+}
+
+#table-text {
+  color: white;
+  border: 1px solid white;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
+}
+
+#start-div {
+  padding: 2%;
+}

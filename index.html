@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess</title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div id="intro-card-inner">
+      <h1 id="intro-message">Welcome to 'Kenzle'!</h1>
+      <br>
+      <p>Guess the mystery Kendrick Lamar song!</p>
+
+      <br>
+
+      <div id="intro-text">
+        <ul style="line-height: 1.7">
+          <li>
+            You get eight guesses to guess a mystery song from any of
+            Kendricks 5 solo studio albums!
+          </li>
+
+          <li>
+            <span id="green-fill">Green in any column</span> &nbsp;indicates a
+            complete match!
+          </li>
+
+          <li>
+            <span id="yellow-fill">Yellow in the album or track number column</span>
+            &nbsp;indicates that this attribute is within 2 (albums or tracks),
+            with an arrow hinting if it is higher ( ↑ ) or lower ( ↓ ).
+          </li>
+
+    
+        </ul>
+      </div> 
+       <div id="albums-included">
+        <img class="smallbums" src="/albumCovers/cover0.png">
+        <img class="smallbums" src="/albumCovers/cover1.png">
+        <img class="smallbums" src="/albumCovers/cover2.png">
+        <img class="smallbums" src="/albumCovers/cover3.png">
+        <img class="smallbums" src="/albumCovers/cover4.png">
+        <img class="smallbums" src="/albumCovers/cover5.png">
+  
+      </div> 
+
+     <div id="start-div">
+        <button id="start-button">Play</button>
+      </div>
+    </div>
+    <!-- <div id="card-background">
+      <div id="end-card">
+        <button id="play-again-button">X</button>
+        <div id="end-card-inner">
+          <div id="end-card-inner-title-container">
+            <h1 id="end-card-title"></h1>
+          </div>
+          <div id="endImg"></div>
+          <p id="mystery-song-title"></p>
+        </div> 
+      </div>
+    </div> -->
+    <div id="main-container">
+      <h1>Guess</h1>
+
+      
+
+     <lives><h3>Guesses: 7</h3></lives>
+    
+     <playAgain>
+      <form autocomplete="off"><input type="text" name="q" id="q" onKeyUp="showResults(this.value)" />
+        <div id="result"></div>
+        </form>
+      </playAgain>
+
+    <table id="result-table">
+      <tbody id="results">
+        <tr id="result-rows">
+          <th id="table-text">Album</th>
+          <th id="table-text">Song</th>
+          <th id="table-text">Track #</th>
+        </tr>
+        <tr>
+          <td class="song-cell grey">
+            <p class="song-title"></p>
+          </td>
+          <td class="album-cell grey up">
+            <td class="album-cell-inner">
+              <!--image goes here-->
+            </td>
+          </td>
+          <td class="track-cell grey up">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </body>
+</html>

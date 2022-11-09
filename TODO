@@ -1,0 +1,10 @@
+KK Song guess:
+4. "How to" pop up [Guesses / albs, Green = match, yellow means within 2 ^ v yellow in track, images]
+5. Make it look pretty 
+6. Github/host
+
+.smallbums {
+    width: 5vw;
+    max-width: 60px;
+    box-shadow: 0 0 50px rgb(255 248 220 / 25%);
+    transition: all 90ms ease-in-out;
